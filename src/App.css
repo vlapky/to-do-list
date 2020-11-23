@@ -1,38 +1,110 @@
+/* common */
 .App {
-  text-align: center;
+    font-family: Roboto;
+    box-sizing: border-box;
+    background: #E5E5E5;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo {
+    margin: 30px auto 30px;
+    width: 400px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+/* / common */
+
+/* header */
+.header {
+    height: 50px;
+    background: #946CE8;
+    border-radius: 3px 3px 0px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    padding: 11px 0 11px 17px;
+}
+/* / header */
+
+/* input */
+.input-wrapper {
+    background: #ffffff;
+    border: 1px solid #cecece;
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    width: 300px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #858585;
+
+    border: none;
+    outline: none;
+
+    padding: 14px 0 13px 17px;
 }
 
-.App-link {
-  color: #61dafb;
+.plus {
+    width: 20px;
+    height: 20px;
+    margin: 16px 25px 14px 0;
+    color: #b3b3b3;
+    cursor: pointer;
 }
+.plus:hover {
+    color: #909090;
+}
+/* / input */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* item */
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    border: 1px solid #cecece;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
 }
+.isCompleted {
+    color: #c4c4c4;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.isCompleted:hover {
+    color: #909090;
+}
+.purple {
+    color: #8d68dd;
+}
+.purple:hover {
+    color:#7857bd;
+}
+.text {
+    width: 280px;
+    margin: 0;
+    font-size: 20px;
+}
+.textIsCompleted {
+    text-decoration: line-through;
+}
+.delete {
+    width: 20px;
+    height: 20px;
+    color: #ff2929;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.delete:hover {
+    color: #9b1717;
+}
+/* / item */
